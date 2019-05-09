@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99a093"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#859a92"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Back_Form"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_action_back"
+                    android:tint="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/Txt_Title_Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="اپلیکیشن سپهر"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/Edt_Title_Form"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Search into"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+
+
+                    />
+
+                <ImageView
+                    android:onClick="Serch_Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_search" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/Btn_Sabtname"
+            android:onClick="Sabtname"
+            android:layout_width="150dp"
+            android:background="@drawable/shape"
+            android:layout_height="40dp"
+            android:text="ثبت نام"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/Btn_Vorod"
+            android:onClick="Vorod"
+            android:layout_width="150dp"
+            android:enabled="false"
+            android:text="ورود"
+            android:textSize="20sp"
+            android:background="@drawable/shape"
+            android:layout_height="40dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

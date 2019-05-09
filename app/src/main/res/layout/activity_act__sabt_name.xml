@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/Appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:onClick="backSabtname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_backimage"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/Name_Sabt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Appbar"
+        android:text="نام :"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/Edt_name_Sabt"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawableTint="#b3e7e2"
+        android:hint="Name"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_above="@+id/Number_Sabt"
+        android:layout_alignLeft="@+id/Edt_Number_Sabtname"
+        android:layout_alignStart="@+id/Edt_Number_Sabtname" />
+
+    <TextView
+        android:id="@+id/Number_Sabt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name_Sabt"
+        android:text="شماره موبایل : "
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/Edt_Number_Sabtname"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edt_name_Sabt"
+        android:layout_toLeftOf="@+id/Name_Sabt"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawableTint="#b3e7e2"
+        android:hint="Phone"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/Pass_SabtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رمز عبور :"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/Number_Sabt"
+        android:layout_alignRight="@+id/Number_Sabt"
+        android:layout_alignEnd="@+id/Number_Sabt" />
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_ramzobor"
+        android:drawableTint="#b3e7e2"
+        android:hint="password"
+        android:textColor="#000"
+        android:inputType="numberPassword"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:id="@+id/Edt_pass_Sabtname"
+        android:layout_alignBottom="@+id/Pass_SabtName"
+        android:layout_alignLeft="@+id/Edt_Number_Sabtname"
+        android:layout_alignStart="@+id/Edt_Number_Sabtname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="جنسیت :"
+        android:textSize="20sp"
+        android:id="@+id/jensiat"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/LinerSabtName1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+   <LinearLayout
+       android:id="@+id/LinerSabtName1"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@+id/Edt_pass_Sabtname"
+       android:layout_marginTop="47dp"
+       android:gravity="center"
+       >
+       <RadioGroup
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="مرد"
+           android:id="@+id/Radio_Mard"
+           android:layout_marginRight="10dp"
+           android:checked="true"
+           />
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="زن"
+           android:id="@+id/Radio_Zan"
+           android:layout_marginLeft="10dp"
+           />
+       </RadioGroup>
+
+
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinerGhavanin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/LinerSabtName1"
+        android:gravity="center"
+        android:layout_marginLeft="93dp"
+
+        >
+
+        <CheckBox
+            android:id="@+id/Chekeddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="باید با قوانین اپلیکیشن موافق باشید"
+            android:checked="true"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/LinerGhavanin"
+        android:gravity="center"
+        >
+
+        <Button
+            android:onClick="okSabtName"
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape"
+            android:text="ok" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
